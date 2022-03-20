@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "testChromeHeadMobile": "npx cypress run --browser chrome --headed --config-file cypress.env.json",
+    "testChromeHeadless": "npx cypress run --browser chrome --headless",
+    "testElectronHeadMobile": "npx cypress run --browser electron --headed --config-file cypress.env.json",
+    "testElectronHeadless": "npx cypress run --browser electron --headless"
   },
   "author": "ikalashnikov",
   "license": "ISC",
